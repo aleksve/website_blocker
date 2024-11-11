@@ -1,0 +1,23 @@
+name: Upload the new version to Mozilla
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      env:
+        JWT_ISSUER: ${{ secrets.JWT_issuer }}
+        JWT_SECRET: ${{ secrets.JWT_secret }}
+      run: |
+        bash create_addon.bash
+        bash upload.bash
+      
