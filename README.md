@@ -10,8 +10,8 @@ Once installed, the addon will automatically block any sites listed in `backgrou
 ## Installation
 
 To install the latest version:
-1. Go to the [Website Blocker Addon Page](https://addons.mozilla.org/en-US/developers/addon/c7f5a3b213924e029ef0/versions/5840995).
-2. Click the `.xpi` file link to download and add the addon to Firefox.
+1. Go to the [Website Blocker Addon Page](https://addons.mozilla.org/en-US/firefox/addon/norwegian-website-blocker/).
+4. Click the `.xpi` file link to download and add the addon to Firefox.
 
 ## Building and Uploading a New Version
 
